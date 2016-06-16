@@ -31,17 +31,5 @@ def get_features(sentence, index, tag1, tag2):
                       "suff(2)": word[-2:],
                       "suff(3)": word[-3:],
                       "suff(4)": word[-4:]}
-
-    ## Palabras alrededor
-##    if index == 0 :
-##        feature_set["prev-word"]= "<START>"
-##    else:
-##        feature_set["prev-word"]= sentence[index-1]
-##
-##    if (index < len(sentence)-1):
-##        feature_set["next-word"]= sentence[index+1]
-##    else:
-##        feature_set["next-word"]= "<END>"
-##                    
     return feature_set
 
